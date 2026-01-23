@@ -1,14 +1,15 @@
-nums = [1,8,6,2,5,4,8,3,7,9]
+nums = [1,8,6,2,5,4,8,3,7]
 # Output: 49
 i = 0
-j = len(nums)
-max_val = nums[0]
-
+j = len(nums)-1
+max_area = 0
 while i < j:
-    if nums[i] > max_val:
-        max_val = nums[i]
-        max_index = j - i
-    i += 1
-
-print(max_val)
-print(max_index)
+    width = j - i
+    height = min(nums[i], nums[j])
+    area = width * height
+    max_area = max(max_area, area)
+    if nums[i] < nums[j]:
+        i += 1
+    else:
+        j -= 1
+print(max_area)
