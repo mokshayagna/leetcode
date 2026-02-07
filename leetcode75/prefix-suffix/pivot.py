@@ -26,3 +26,4 @@ for i in range(n):
     if prefix[i] == total - prefix[i] - nums[i]:
         print("Pivot:", i)
         break
+        
