@@ -1,6 +1,6 @@
 nums = [-4,-1,0,3,10]
 # Output: [0,1,9,16,100]
-"""
+
 res = []
 for i in nums:
     res.append(i*i)
@@ -18,4 +18,4 @@ while i <= j:
         res[j - i] = nums[j] * nums[j]
         j -= 1
 print(res)
-    
+"""

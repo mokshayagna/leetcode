@@ -19,4 +19,3 @@ for num in nums:
     nums.remove(num)
 nums = nums + res
 print(nums)
-    

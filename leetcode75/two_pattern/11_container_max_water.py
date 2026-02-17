@@ -13,4 +13,3 @@ while i < j:
     else:
         j -= 1
 print(max_area)
-    
