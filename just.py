@@ -1,4 +1,6 @@
 a = 12
-q = list(str(a))
-
+# ["1","2"]
+q = [] 
+for c in str(a):
+    q.append(c)
 print(q)
